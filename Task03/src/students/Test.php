@@ -11,13 +11,14 @@ class Test
         $student1 = new Student("Бикчурин", "Эльмир", "ФМиИТ", 3, "301");
         echo $student1;
 
-        $student2 = (new Student("Иван", "Иванов", "ФМиИТ", 3, "301"))
-            ->setSecondName("Сидоров")
-            ->setCourse(4);
+        $student2 = (new Student("", "", "ФМиИТ", 1, "301"))
+            ->setFirstName('Иван')
+            ->setSecondName("Иванов")
+            ->setCourse(3);
 
         echo $student2;
 
-        echo "Тестирование StudentsList...\n";
+        echo "\nТестирование StudentsList...\n";
 
         $list = new StudentsList();
         $list->add($student1);
@@ -25,6 +26,7 @@ class Test
 
         echo "Всего студентов: " . $list->count() . "\n";
         echo "Первый студент: " . $list->get(0) . "\n";
+        echo "Второй студент: " . $list->get(1) . "\n";
 
         $list->store("students.db");
         echo "Данные сохранены в students.db\n";

@@ -1,0 +1,21 @@
+{
+  "name": "task07_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "createFraction.js",
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "babel-jest": "^29.5.0"
+  }
+}
